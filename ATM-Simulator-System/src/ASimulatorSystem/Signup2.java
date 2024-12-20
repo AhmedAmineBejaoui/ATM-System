@@ -4,7 +4,7 @@ package ASimulatorSystem;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import java.sql.*;
+
 
 public class Signup2 extends JFrame implements ActionListener{
     
@@ -12,8 +12,10 @@ public class Signup2 extends JFrame implements ActionListener{
     JButton b;
     JRadioButton r1,r2,r3,r4;
     JTextField t1,t2,t3;
+    @SuppressWarnings("rawtypes")
     JComboBox c1,c2,c3,c4,c5;
     String formno;
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     Signup2(String formno){
         
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("ASimulatorSystem/icons/logo.jpg"));

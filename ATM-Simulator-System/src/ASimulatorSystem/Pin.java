@@ -4,7 +4,6 @@ package ASimulatorSystem;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import java.sql.*;
 
 public class Pin extends JFrame implements ActionListener{
     
@@ -75,8 +74,10 @@ public class Pin extends JFrame implements ActionListener{
     
     }
     
+    @SuppressWarnings("deprecation")
     public void actionPerformed(ActionEvent ae){
         try{        
+            
             String npin = t1.getText();
             String rpin = t2.getText();
             

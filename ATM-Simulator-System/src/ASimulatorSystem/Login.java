@@ -88,6 +88,7 @@ public class Login extends JFrame implements ActionListener{
             if(ae.getSource()==b1){
                 Conn c1 = new Conn();
                 String cardno  = tf1.getText();
+                @SuppressWarnings("deprecation")
                 String pin  = pf2.getText();
                 String q  = "select * from login where cardno = '"+cardno+"' and pin = '"+pin+"'";
 
